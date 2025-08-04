@@ -1,64 +1,78 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bonga tronadora</title>
   <style>
+    :root {
+      --verde: #6ab04c;
+      --verde-oscuro: #218c74;
+      --fondo: #f1f8f5;
+      --blanco: #ffffff;
+    }
+
     body {
-      background-color: #f4f1ea;
       font-family: Arial, sans-serif;
-      margin: 40px;
+      background-color: var(--fondo);
       color: #333;
+      margin: 0;
+      padding: 0;
     }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background-color: var(--blanco);
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+
     h1 {
-      color: #7c4a1e;
+      color: var(--verde-oscuro);
+      text-align: center;
     }
+
     h2 {
-      color: #a86432;
+      color: var(--verde);
+      margin-top: 30px;
     }
-    p, li {
-      font-size: 16px;
+
+    p {
       line-height: 1.6;
     }
+
     img {
+      display: block;
       max-width: 100%;
       height: auto;
-      border-radius: 10px;
-      margin-bottom: 20px;
+      margin: 20px auto;
+      border-radius: 8px;
     }
+
   </style>
 </head>
 <body>
-  <h1>Bonga tronadora</h1>
-  <img src="bonga.jpg" alt="Bonga tronadora (Hura crepitans)">
-  
-  <h2>Nombre científico:</h2>
-  <p><strong>Hura crepitans</strong></p>
+  <div class="container">
+    <h1>Bonga tronadora</h1>
+    <img src="bonga.jpg" alt="Bonga tronadora - Hura crepitans">
 
-  <h2>Información general:</h2>
-  <ul>
-    <li><strong>Familia:</strong> Euphorbiaceae</li>
-    <li><strong>Origen:</strong> América tropical</li>
-    <li><strong>Altura promedio:</strong> Hasta 30 metros</li>
-  </ul>
+    <h2>Información general:</h2>
+    <p><strong>Familia:</strong> Euphorbiaceae</p>
+    <p><strong>Origen:</strong> América tropical</p>
+    <p><strong>Altura promedio:</strong> 20 a 30 metros</p>
 
-  <h2>Características:</h2>
-  <p>
-    Árbol de gran porte, de tronco recto, con corteza grisácea cubierta de espinas cónicas. 
-    Sus hojas son grandes, alternas y simples. Produce frutos en forma de cápsula que, al secarse, 
-    explotan ruidosamente dispersando sus semillas. La savia es lechosa y tóxica.
-  </p>
 
-  <h2>Cuidados:</h2>
-  <p>
-    Requiere climas cálidos y húmedos. Se adapta a suelos bien drenados y suele crecer en zonas 
-    abiertas o ribereñas. Por su toxicidad, debe manejarse con precaución.
-  </p>
+    <h2>Características:</h2>
+    <p>Es un árbol de gran tamaño con tronco recto, espinas prominentes y hojas grandes. Su fruto es una cápsula leñosa que explota al madurar, dispersando las semillas con fuerza, lo que le da su nombre de "tronadora". Su savia es tóxica e irritante.</p>
 
-  <h2>Usos:</h2>
-  <p>
-    Se utiliza como árbol de sombra u ornamental en algunas zonas rurales. Su madera es blanda, 
-    de poco uso comercial. También tiene usos tradicionales, aunque limitados por su toxicidad.
-  </p>
+    <h2>Cuidados:</h2>
+    <p>Crece bien en suelos húmedos, profundos y bien drenados. Prefiere climas cálidos y húmedos. No requiere muchos cuidados una vez establecido, pero debe manejarse con precaución debido a su toxicidad.</p>
+
+    <h2>Usos:</h2>
+    <p>Se utiliza como árbol de sombra o ornamental en zonas rurales. La madera puede usarse para construcciones livianas, pero se evita el contacto directo con la savia. También es valioso para la reforestación en su hábitat natural.</p>
+  </div>
 </body>
 </html>
