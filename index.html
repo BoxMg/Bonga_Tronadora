@@ -158,3 +158,28 @@
     <div class="bloque">
       <h2>Usos:</h2>
       <p>Utilizado como árbol de sombra o decorativo en áreas rurales. Su madera sirve para construcciones livianas. Es ideal para proyectos de reforestación en su hábitat natural.</p>
+    </div>
+  </div>
+
+  <footer>
+    Líder: Emmanuel Arrieta Morales 9-02
+  </footer>
+
+  <button class="arriba" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+
+  <script>
+    const bloques = document.querySelectorAll('.bloque');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+
+    bloques.forEach(bloque => observer.observe(bloque));
+  </script>
+</body>
+</html>
